@@ -1,15 +1,14 @@
 ## Contexte du Projet :  
 
 Faire une simulation d'un cas comme si vous avez été contacté par un concessionnaire automobile afin de l'aider à mieux cibler les véhicules
-susceptibles d'intéresser ses clients. Pour cela il met à votre disposition :
-• Son catalogue de véhicules
-• Son fichier clients concernant les achats de l'année en cours
-• Un accès à toutes les informations sur les immatriculations effectuées cette année
-• Une brève documentation des données
-• Un vendeur (voir son interview ci-dessous)
-Votre client sera satisfait si vous lui proposez un outil permettant :
-• D’évaluer en temps réel le type de véhicule le plus susceptible d'intéresser des clients qui se
-présentent dans la concession ;
+susceptibles d'intéresser ses clients. Pour cela il met à votre disposition :  
+• Son catalogue de véhicules  
+• Son fichier clients concernant les achats de l'année en cours  
+• Un accès à toutes les informations sur les immatriculations effectuées cette année  
+• Une brève documentation des données  
+• Un vendeur  
+Votre client sera satisfait si vous lui proposez un outil permettant :  
+• D’évaluer en temps réel le type de véhicule le plus susceptible d'intéresser des clients qui se présentent dans la concession.  
 • D’envoyer une documentation précise sur le véhicule le plus adéquat pour des clients sélectionnés par son service marketing.  
 
 ## Objectifs du Projet : 
