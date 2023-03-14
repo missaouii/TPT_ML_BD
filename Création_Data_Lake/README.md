@@ -109,3 +109,77 @@ On va par la suite faire de la manipulation sur ces données grace à PySpark qu
 	  "oracle.kv.tableName" = "immatriculations"
 	);	
   ```  
+2.TABLE catalogue_hive_ext :
+  ```
+	CREATE EXTERNAL TABLE  catalogue_hive_ext(marque STRING,  nom STRING, puissance  int, longueur string, nbPlaces int,nbPortes int, couleur string, occasion string, prix int)
+	ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
+	STORED AS TEXTFILE LOCATION 'hdfs:/project/catalogue'
+	tblproperties("skip.header.line.count"="1");
+  ```  
+3.TABLE  Clients_12_hive_ext :
+  ```
+	CREATE EXTERNAL TABLE  Clients_12_hive_ext(age int,sexe string,taux int,situationFamiliale string,nbEnfantsAcharge int,deuxieme_voiture string,immatriculation string)
+	ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
+	STORED AS TEXTFILE LOCATION 'hdfs:/project/Clients_12'
+	tblproperties("skip.header.line.count"="1");
+  ```   
+4.TABLE CO2_hive_ext :
+  ```
+	CREATE EXTERNAL TABLE IF NOT EXISTS CO2_hive_ext (
+	  id int,
+	  Marque_Modele String,
+	  Bonus_Malus String,
+	  Rejets_CO2_g_km String,
+	  Cout_enerie String
+	)
+	ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
+	STORED AS TEXTFILE LOCATION 'hdfs:/project/CO2'
+	tblproperties("skip.header.line.count"="1");
+  ```   
+5.Table Marketing_hive_ext :
+  ```
+	CREATE EXTERNAL TABLE IF NOT EXISTS Marketing_hive_ext (
+	  age int,
+	  sexe String,
+	  taux int,
+	  situationFamiliale String,
+	  nbEnfantsAcharge int,
+	  deuxieme_voiture string
+	)
+	STORED BY 'com.mongodb.hadoop.hive.MongoStorageHandler'
+	WITH SERDEPROPERTIES(
+	  'mongo.columns.mapping'='{"age":"age","sexe":"sexe","taux":"taux","situationFamiliale":"situationFamiliale","nbEnfantsAcharge":"nbEnfantsAcharge","deuxieme_voiture":"2eme voiture"}',
+	  'mongo.input.format'='com.mongodb.hadoop.mapred.BSONFileInputFormat',
+	  'mongo.output.format'='com.mongodb.hadoop.mapred.BSONFileOutputFormat'
+	)
+	TBLPROPERTIES (
+	  'mongo.uri'='mongodb://localhost:27017/project.marketing',
+	  'mongo.input.format'='com.mongodb.hadoop.hive.BSONFileInputFormat',
+	  'mongo.output.format'='com.mongodb.hadoop.hive.BSONFileOutputFormat',
+	  'mongo.job.input.format'='com.mongodb.hadoop.mapred.BSONFileInputFormat',
+	  'mongo.job.output.format'='com.mongodb.hadoop.mapred.BSONFileOutputFormat',
+	  'mongo.input.query'='{}'
+	);
+  ```   
+   
+#### Création de tables internes :  
+1.Table Clients_11_hive_int :  
+  ```
+	CREATE TABLE Clients_11_hive_int (
+	  age INT,
+	  sexe STRING,
+	  taux int,
+	  situationFamiliale string,
+	  nbEnfantsAcharge int,
+	  deuxieme_voiture string,
+	  immatriculation string
+	)
+	ROW FORMAT DELIMITED
+	FIELDS TERMINATED BY ','
+	LINES TERMINATED BY '\n'
+	STORED AS TEXTFILE;
+
+
+	LOAD DATA LOCAL INPATH '/vagrant/fichiers_data/Clients_11.csv' OVERWRITE INTO TABLE Clients_11_hive_int;
+  ```     
+
