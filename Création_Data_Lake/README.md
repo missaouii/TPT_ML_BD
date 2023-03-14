@@ -16,7 +16,7 @@ Comme on peut le voir dans la figure notre lac de données est constitué de:
 3. OracleNOSQL : `Immatriculations.csv` .
 4. Hive : `Clients_11.csv` .
 
-Hive est notre point d'entré de notre Lac de données, il va donc contenir des tables externes qui vont pointer sur les données physique citées précedement mis à part la table qui est dans Hive.
+Hive est notre point d'entré de notre Lac de données, il va donc contenir des tables externes qui vont pointer sur les données physique citées précedement mis à part la table qui est dans Hive.  
 On va par la suite faire de la manipulation sur ces données grace à PySpark qui va importer les données à partir des tables externes de hive.  
 ![Architecture](https://github.com/missaouii/TPT_ML_BD/blob/main/Cr%C3%A9ation_Data_Lake/Architecture%20du%20lac%20de%20donn%C3%A9es.PNG)
 
