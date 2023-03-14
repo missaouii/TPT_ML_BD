@@ -19,8 +19,8 @@ présentent dans la concession ;
   
 ## Documentation de données :  
   
-Les fichiers de données qui ont été mis à votre disposition sont décrits dans les tables ci-dessous. Pour
-chaque attribut du fichier, sont indiqués : son nom, son type (numérique, caractères, catégoriel ou booléen), sa description et son domaine de valeurs.  
+Les fichiers de données sont décrits dans les tables ci-dessous.   
+Pour chaque attribut du fichier, sont indiqués : son nom, son type (numérique, caractères, catégoriel ou booléen), sa description et son domaine de valeurs.  
 Certains attributs peuvent comporter des valeurs manquantes ou incorrectes (erreur de saisie par exemple). Celles-ci sont représentées par une cellule vide ou bien contenant une valeur hors du domaine de valeurs de la variable (valeurs « ? », « » ou « N/D » par exemple).  
 
 ![Documentation_1](https://github.com/missaouii/TPT_ML_BD/blob/main/Cr%C3%A9ation_Data_Lake/Architecture%20du%20lac%20de%20donn%C3%A9es.PNG)
