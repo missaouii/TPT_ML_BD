@@ -1,4 +1,4 @@
-### Import des fichiers
+## Import des fichiers
 Vous avez tout dabord besoin d'importer les fichiers présents dans ce lien afin d'executer les commandes de création du lac de données: 
 1. Télécharger le dossier `fichiers_data`:
   ```
@@ -9,7 +9,7 @@ Vous avez tout dabord besoin d'importer les fichiers présents dans ce lien afin
   cd TPT_ML_BD/VM
   ```
 
-### Architecture du Data Lake:
+## Architecture du Data Lake:
 Comme on peut le voir dans la figure notre lac de données est constitué de:
 1. HDFS : `Catalogue.csv,Clients_12.csv,CO2.csv` .
 2. MongoDB : `Marketing.csv` .
@@ -21,7 +21,7 @@ On va par la suite faire de la manipulation sur ces données grace à PySpark qu
 ![Architecture](https://github.com/missaouii/TPT_ML_BD/blob/main/Cr%C3%A9ation_Data_Lake/Architecture%20du%20lac%20de%20donn%C3%A9es.PNG)
 
 
-### Création du Data Lake:
+## Création du Data Lake:
 ### Partie MongoDB:
 1.Connexion à Mongo Shell :
   ```bash
@@ -83,7 +83,7 @@ On va par la suite faire de la manipulation sur ces données grace à PySpark qu
   ```  
   
 ### Partie Hive :  
-## Création de tables externes :
+#### Création de tables externes :
 1.TABLE Immatriculations_hive_ext :
   ```
 	CREATE EXTERNAL TABLE  Immatriculations_hive_ext(immatriculation STRING,  

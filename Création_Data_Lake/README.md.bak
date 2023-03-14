@@ -63,3 +63,49 @@ On va par la suite faire de la manipulation sur ces données grace à PySpark qu
   ```  
   
 ### Partie HDFS:  
+1.Lancer Hadoop :
+  ```bash
+  start-dfs.sh
+  start-yarn.sh
+  ```  
+2.Creation de dossier pour le projet :
+  ```bash
+  hdfs dfs -mkdir /project
+  hdfs dfs -mkdir /project/catalogue
+  hdfs dfs -mkdir /project/Clients_12
+  hdfs dfs -mkdir /project/CO2
+  ```  
+3.Import des fichiers :
+  ```bash
+  hadoop fs -put /vagrant/fichiers_data/Clients_12.csv /project/Clients_12
+  hadoop fs -put /vagrant/fichiers_data/catalogue.csv /project/catalogue
+  hadoop fs -put /vagrant/fichiers_data/CO2.csv /project/CO2
+  ```  
+  
+### Partie Hive :  
+## Création de tables externes :
+1.TABLE Immatriculations_hive_ext :
+  ```
+	CREATE EXTERNAL TABLE  Immatriculations_hive_ext(immatriculation STRING,  
+	marque STRING,
+	nom STRING,
+	puissance  int,
+	longueur string,
+	nbPlaces int,
+	nbPortes int,
+	couleur string,
+	occasion string,
+	prix int, 
+	id int)
+	ROW FORMAT SERDE 'org.apache.hive.hcatalog.data.JsonSerDe'
+	WITH SERDEPROPERTIES (
+	  'serialization.format' = '1'
+	)
+	STORED BY 'oracle.kv.hadoop.hive.table.TableStorageHandler'
+	TBLPROPERTIES (
+	  "oracle.kv.kvstore" = "kvstore",
+	  "oracle.kv.hosts" = "localhost:5000",
+	  "oracle.kv.hadoop.hosts" = "localhost/127.0.0.1",
+	  "oracle.kv.tableName" = "immatriculations"
+	);	
+  ```  
