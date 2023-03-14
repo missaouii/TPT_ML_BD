@@ -16,8 +16,50 @@ Comme on peut le voir dans la figure notre lac de données est constitué de:
 3. OracleNOSQL : `Immatriculations.csv` .
 4. Hive : `Clients_11.csv` .
 
-Hive est notre point d'entré de notre Lac de données, il va donc contenir des tables externes qui vont pointer sur les données physique citées précedement mis à part la table qui est dans Hive.
+Hive est notre point d'entré de notre Lac de données, il va donc contenir des tables externes qui vont pointer sur les données physique citées précedement mis à part la table qui est dans Hive.  
 On va par la suite faire de la manipulation sur ces données grace à PySpark qui va importer les données à partir des tables externes de hive.  
 ![Architecture](https://github.com/missaouii/TPT_ML_BD/blob/main/Cr%C3%A9ation_Data_Lake/Architecture%20du%20lac%20de%20donn%C3%A9es.PNG)
 
 
+### Création du Data Lake:
+### Partie MongoDB:
+1.Connexion à Mongo Shell :
+  ```bash
+  mongosh
+  ```
+2.Création et connexion à la base :
+  ```
+  use project
+  ```
+3.Création de la collection marketing :
+ ```
+  db.createCollection("marketing")
+  ```
+4.Import du fichier dans la collection marketing :
+ ```
+  mongoimport --port 27017 --host localhost --db project --collection marketing --type csv --file "/vagrant/fichiers_data/Marketing.csv" --headerline
+  ```  
+  
+### Partie ORACLE NoSQL:  
+1.Lancer KVStore :
+  ```bash
+  nohup java -Xmx64m -Xms64m -jar $KVHOME/lib/kvstore.jar kvlite -secure-config disable -root $KVROOT &
+  ```
+2.Lancer KVStoreAdminClient :
+  ```bash
+  java -jar $KVHOME/lib/kvstore.jar runadmin -port 5000 -host localhost
+  ```
+3.Connexion à KVStore :
+  ```bash
+  connect store -name kvstore
+  ```
+4.Création de la table :
+  ```
+  execute 'Create table immatriculations (immatriculation string,marque string, nom string, puissance integer, longueur string, nbPlaces integer,nbPortes integer, couleur string, occasion string, prix integer, id INTEGER GENERATED ALWAYS AS IDENTITY (START WITH 1 INCREMENT BY 1 ), primary key(id))'
+  ```
+5.Charger le fichier Immatriculations.json dans la table :
+  ```
+  put table -name immatriculations -file /vagrant/fichiers_data/Immatriculations.json
+  ```  
+  
+### Partie HDFS:  
