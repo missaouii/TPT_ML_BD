@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Classify Iris</title>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', path='/style.css') }}">
+
+</head>
+
+<body>
+    <div class="login">
+        <h1>Classify Iris</h1>
+
+        <!-- Form to enter new data for predictions  -->
+        <form action="{{ url_for('predict')}}" method="POST">
+            <input type="text" name="age" placeholder="age" required="required" /><br>
+            <input type="text" name="sexe" placeholder="sexe" required="required" /><br>
+            <input type="text" name="taux" placeholder="taux" required="required" /><br>
+            <input type="text" name="situationFamiliale" placeholder="situationFamiliale" required="required" /><br>
+            <input type="text" name="nbEnfantsAcharge" placeholder="nbEnfantsAcharge" required="required" /><br>
+            <input type="text" name="secvoiture" placeholder="secvoiture" required="required" /><br>
+            <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+        </form>
+
+        {{ error | safe }}
+
+        <br/>
+        <br/> {{ pred_target | safe }}
+        <br/>
+        <br/>
+        <div>
+            {{ pred_features | safe }}
+        </div>
+    </div>
+
+</body>
+
+</html>
