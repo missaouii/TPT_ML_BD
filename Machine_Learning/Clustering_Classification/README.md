@@ -10,6 +10,11 @@ Dans cette partie on a :
 	![Silhouette_Method](https://github.com/missaouii/TPT_ML_BD/blob/main/Machine_Learning/Clustering_Classification/Silhouette_method.png)  
 	3.3 dendrogram Method :  
 	![dendrogram_Method](https://github.com/missaouii/TPT_ML_BD/blob/main/Machine_Learning/Clustering_Classification/dendrogram_method.png)  
+  
+4. Application De K-means avec 4 clusters :  
+	![K-means](https://github.com/missaouii/TPT_ML_BD/blob/main/Machine_Learning/Clustering_Classification/Kmeans_Diagramme.png)  
+	![PCA_K-means](https://github.com/missaouii/TPT_ML_BD/blob/main/Machine_Learning/Clustering_Classification/PCA_K-means.png)  
+	
 
 ## Objectifs du Projet : 
 
