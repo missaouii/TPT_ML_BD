@@ -15,21 +15,17 @@ Dans cette partie on a :
 	![K-means](https://github.com/missaouii/TPT_ML_BD/blob/main/Machine_Learning/Clustering_Classification/Kmeans_Diagramme.png)  
 	![PCA_K-means](https://github.com/missaouii/TPT_ML_BD/blob/main/Machine_Learning/Clustering_Classification/PCA_K-means.png)  
 	
+5. Etude approfondi des données pour dégager les 4 catégories de voitures
 
-## Objectifs du Projet : 
-
-1. Création d'un lac de données pour contenir tout vos fichier en utilisant HDFS, Oracle NOSQL, MongoDB et Hive.  
-2. Utilisation les données des différentes données pour créer un modèle de machine learning optimal pour prédire le type de véhicule le plus susceptible d'intéresser le client.  
-  
-## Documentation de données :  
-  
-Les fichiers de données sont décrits dans les tables ci-dessous.   
-Pour chaque attribut du fichier, sont indiqués : son nom, son type (numérique, caractères, catégoriel ou booléen), sa description et son domaine de valeurs.  
-Certains attributs peuvent comporter des valeurs manquantes ou incorrectes (erreur de saisie par exemple). Celles-ci sont représentées par une cellule vide ou bien contenant une valeur hors du domaine de valeurs de la variable (valeurs « ? », « » ou « N/D » par exemple).  
-
-![Documentation_1](https://github.com/missaouii/TPT_ML_BD/blob/main/documentation_donn%C3%A9es_1.png)
-![Documentation_2](https://github.com/missaouii/TPT_ML_BD/blob/main/documentation_donn%C3%A9es_2.PNG)
-![Documentation_3](https://github.com/missaouii/TPT_ML_BD/blob/main/documentation_donn%C3%A9es_3.PNG)
- 
-
+## Classification :  
+Dans cette partie on a :  
+1. Ajoutern la colonne catégorie dans le fichier Client grace à quelques jointures  
+2. nettoyage de données .  
+3. Manipulation des données comme par exemple :  
+	3.1 Standardisation des données numérique.  
+	3.2 Transformer les données catégorielles en vecteurs numérique.  
+	3.3 Equilibrer les classes etc...  
+4. Appliquer plusieurs algorithmes de classification avec une optimisation de leur hyperparamètres.  
+5. Mettre le Dataframe dans un fichier pickle pour l'utiliser dans MLFLOW pour comparer nos modèles.  
+6. Mettre le meilleur dans un fichier pickle pour l'utiliser dans l'API.  
  
