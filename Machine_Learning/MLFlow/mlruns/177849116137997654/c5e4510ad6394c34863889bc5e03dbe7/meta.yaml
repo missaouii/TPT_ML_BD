@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/UserAD/Desktop/BIHAR/Machine%20Learning%201/TPT%202023/notebooks/mlflow/mlruns/177849116137997654/c5e4510ad6394c34863889bc5e03dbe7/artifacts
+deleted_time: 1678813537122
+end_time: 1678812308932
+entry_point_name: ''
+experiment_id: '177849116137997654'
+lifecycle_stage: deleted
+run_id: c5e4510ad6394c34863889bc5e03dbe7
+run_name: logistic regression
+run_uuid: c5e4510ad6394c34863889bc5e03dbe7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1678812305193
+status: 3
+tags: []
+user_id: missa

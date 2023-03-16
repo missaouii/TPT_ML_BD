@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/UserAD/Desktop/BIHAR/Machine%20Learning%201/TPT%202023/notebooks/mlflow/mlruns/177849116137997654/cb54b520091041179c56e805e7e90fbc/artifacts
+end_time: 1678826845883
+entry_point_name: ''
+experiment_id: '177849116137997654'
+lifecycle_stage: active
+run_id: cb54b520091041179c56e805e7e90fbc
+run_name: random forest
+run_uuid: cb54b520091041179c56e805e7e90fbc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1678826834434
+status: 3
+tags: []
+user_id: missa

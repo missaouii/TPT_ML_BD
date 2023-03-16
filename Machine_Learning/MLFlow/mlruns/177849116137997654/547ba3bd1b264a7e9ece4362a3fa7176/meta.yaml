@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/UserAD/Desktop/BIHAR/Machine%20Learning%201/TPT%202023/notebooks/mlflow/mlruns/177849116137997654/547ba3bd1b264a7e9ece4362a3fa7176/artifacts
+end_time: 1678574584475
+entry_point_name: ''
+experiment_id: '177849116137997654'
+lifecycle_stage: active
+run_id: 547ba3bd1b264a7e9ece4362a3fa7176
+run_name: svc
+run_uuid: 547ba3bd1b264a7e9ece4362a3fa7176
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1678572658211
+status: 3
+tags: []
+user_id: UserAD

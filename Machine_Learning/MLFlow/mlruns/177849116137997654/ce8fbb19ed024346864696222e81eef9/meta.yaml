@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/UserAD/Desktop/BIHAR/Machine%20Learning%201/TPT%202023/notebooks/mlflow/mlruns/177849116137997654/ce8fbb19ed024346864696222e81eef9/artifacts
+deleted_time: 1678824590511
+end_time: 1678823703231
+entry_point_name: ''
+experiment_id: '177849116137997654'
+lifecycle_stage: deleted
+run_id: ce8fbb19ed024346864696222e81eef9
+run_name: svc
+run_uuid: ce8fbb19ed024346864696222e81eef9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1678822529909
+status: 3
+tags: []
+user_id: missa

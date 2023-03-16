@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/UserAD/Desktop/BIHAR/Machine%20Learning%201/TPT%202023/notebooks/mlflow/mlruns/177849116137997654/9ce444d1b364448186b01a7ec5ee3804/artifacts
+end_time: 1678572648396
+entry_point_name: ''
+experiment_id: '177849116137997654'
+lifecycle_stage: active
+run_id: 9ce444d1b364448186b01a7ec5ee3804
+run_name: logistic regression
+run_uuid: 9ce444d1b364448186b01a7ec5ee3804
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1678572641522
+status: 3
+tags: []
+user_id: UserAD

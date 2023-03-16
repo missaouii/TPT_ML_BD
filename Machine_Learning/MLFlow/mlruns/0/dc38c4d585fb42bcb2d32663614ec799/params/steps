@@ -1,0 +1,5 @@
+[('ohe_and_scaling', ColumnTransformer(transformers=[('ohe', OneHotEncoder(handle_unknown='ignore'),
+                                 ['sexe', 'situationFamiliale']),
+                                ('scaling', StandardScaler(),
+                                 ['age', 'taux', 'nbEnfantsAcharge',
+                                  '2eme voiture'])])), ('clf', LogisticRegression(solver='liblinear'))]
