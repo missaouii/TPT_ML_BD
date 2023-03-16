@@ -5,11 +5,11 @@ Dans cette partie on a :
 2. Exploration du comportement, nettoyage et manipulation (Feature engineering) des données .  
 3. Appliquer des méthodes pour prédire le nombre potentiel de cluster : 
 	3.1 Elbow Method :  
-	![Elbow_Method](https://github.com/missaouii/TPT_ML_BD/blob/main/documentation_donn%C3%A9es_1.png)
+	![Elbow_Method](https://github.com/missaouii/TPT_ML_BD/blob/main/Machine_Learning/Clustering_Classification/Elbow_method.png)
 	3.2 Silhouette  Method :  
-	![Silhouette_Method](https://github.com/missaouii/TPT_ML_BD/blob/main/documentation_donn%C3%A9es_1.png)
+	![Silhouette_Method](https://github.com/missaouii/TPT_ML_BD/blob/main/Machine_Learning/Clustering_Classification/Silhouette_method.png)
 	3.3 dendrogram Method :  
-	![dendrogram_Method](https://github.com/missaouii/TPT_ML_BD/blob/main/documentation_donn%C3%A9es_1.png)
+	![dendrogram_Method](https://github.com/missaouii/TPT_ML_BD/blob/main/Machine_Learning/Clustering_Classification/dendrogram_method.png)
 
 ## Objectifs du Projet : 
 
