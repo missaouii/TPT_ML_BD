@@ -12,10 +12,10 @@ from fastapi import FastAPI,Response
 
 app = FastAPI()
 
-app.mount("/static", StaticFiles(directory="static"), name="static")
-templates = Jinja2Templates(directory="templates")
+# app.mount("/static", StaticFiles(directory="static"), name="static")
+# templates = Jinja2Templates(directory="templates")
 
-pkl_filename = "model.pkl"
+pkl_filename = "/usr/local/bin/model.pkl"
 with open(pkl_filename, 'rb') as file:
     model_data = pickle.load(file)
 
@@ -79,6 +79,6 @@ if(__name__) == '__main__':
     uvicorn.run(
         "app:app",
         host    = "0.0.0.0",
-        port    = 5000, 
+        port    = 8000, 
         reload  = True
     )
