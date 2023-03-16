@@ -3,7 +3,7 @@
 Dans cette partie on a :  
 1. Importer le fichier `Catalogue.csv`.  
 2. Exploration du comportement, nettoyage et manipulation (Feature engineering) des données .  
-3. Appliquer des méthodes pour prédire le nombre potentiel de cluster : 
+3. Appliquer des méthodes pour prédire le nombre potentiel de cluster :   
 	3.1 Elbow Method :  
 	![Elbow_Method](https://github.com/missaouii/TPT_ML_BD/blob/main/Machine_Learning/Clustering_Classification/Elbow_method.png)  
 	3.2 Silhouette  Method :  
